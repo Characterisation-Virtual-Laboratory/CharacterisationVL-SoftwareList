@@ -3,7 +3,7 @@ CharacterisationVL-SoftwareList
 Tools to consolidate a listing of CVL software available at the various sites.
 
 
-# list.py
+# list.py (Python >=3.6)
 This small script parses Mate's menu configuration files to get a list of installed software. 
 It also looks into the Exec script to determine how the sofware is launched (singulraity or module).
 

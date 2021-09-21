@@ -40,11 +40,12 @@ def find_categories(tree, directories_path, is_merge_file):
                 for _directory_item in _directory_items:
                     # read the directory
                     _directory_file_path = os.path.join(directories_path, _directory_item.text)
-                    _dir_config = configparser.ConfigParser(interpolation=None)
-                    _dir_config.read(_directory_file_path)
-                    _dir_name = _dir_config.get("Desktop Entry", "Name").strip()
-                    if _dir_name:
-                        return_cats[category_val]['directories'].insert(0, _dir_name)
+                    if os.path.exists(_directory_file_path):
+                        _dir_config = configparser.ConfigParser(interpolation=None)
+                        _dir_config.read(_directory_file_path)
+                        _dir_name = _dir_config.get("Desktop Entry", "Name").strip()
+                        if _dir_name:
+                            return_cats[category_val]['directories'].insert(0, _dir_name)
             _cat_parent = _cat_parent.getparent()
     return return_cats
 
