@@ -1,0 +1,95 @@
+site, name, version, menu_path, tags, exec_type, module_name, singularityimagepath
+CVl@Qld,Relion,, Applications/CVL CryoEM, CVL CryoEM|Applications, singularity, , /sw7/CVL/containers/relion_3.0.7.simg
+CVl@Qld,Ilastik,, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/ilastik.simg
+CVl@Qld,mrtrix3,3.0.0, Applications/CVL Neuroimaging, CVL mrtrix3|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,Rstudio with R,3.4.4, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/rstudio_R-3.4.4.simg
+CVl@Qld,Fiji,, Applications/CVL Microscopy, CVL Microscopy|Applications, singularity, , /sw7/CVL/containers/fiji.simg
+CVl@Qld,Cytoscape,, Applications/CVL Bioinformatics, CVL Bioinformatics|Applications, singularity, , /sw7/CVL/containers/cytoscape.simg
+CVl@Qld,Firefox,, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/firefox.simg
+CVl@Qld,fsl,6.0.2, Applications/CVL Neuroimaging, CVL FSL|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,Jupyter notebook,, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/jupyter.simg
+CVl@Qld,itksnap,3.8.0, Applications/CVL Neuroimaging, CVL itksnap|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,freesurfer,7.1.0, Applications/CVL Neuroimaging, CVL freesurfer|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,BIDScoin,, Applications/CVL Neuroimaging, CVL Neuroimaging|Applications, singularity, , /sw7/CVL/containers/bidscoin.simg
+CVl@Qld,afni,20.1.02, Applications/CVL Neuroimaging, CVL afni|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,Owncloud,, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/owncloud.simg
+CVl@Qld,IMOD,, Applications/CVL Microscopy, CVL Microscopy|Applications, singularity, , /sw7/CVL/containers/imod_v4_9_9.simg
+CVl@Qld,minc,1.9.17, Applications/CVL Neuroimaging, CVL MINC|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,AstroImageJ,, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/astroimagej.simg
+CVl@Qld,ParaView,, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/paraview-5.6.0_cuda-9.0.simg
+CVl@Qld,Rstudio with R,3.6.3, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/rstudio_R-3.6.3.simg
+CVl@Qld,3dslicer,, Applications/CVL Neuroimaging, CVL Neuroimaging|Applications, singularity, , /sw7/CVL/containers/3dslicer.simg
+CVl@Qld,OMERO.insight,, Applications/CVL Miscellaneous, CVL Miscellaneous|Applications, singularity, , /sw7/CVL/containers/omero-insight.simg
+CVl@Qld,fsl,6.0.3, Applications/CVL Neuroimaging, CVL FSL|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,freesurfer,6.0.1, Applications/CVL Neuroimaging, CVL freesurfer|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,julia,1.4.1, Applications/CVL Neuroimaging, CVL julia|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,EMAN,, Applications/CVL CryoEM, CVL CryoEM|Applications, singularity, , /sw7/CVL/containers/eman_2.3.simg
+CVl@Qld,CisTEM,, Applications/CVL CryoEM, CVL CryoEM|Applications, singularity, , /sw7/CVL/containers/cistem.simg
+CVl@Qld,ants,2.3.1, Applications/CVL Neuroimaging, CVL ANTs|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,afni,20.1.06, Applications/CVL Neuroimaging, CVL afni|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,ants,2.3.0, Applications/CVL Neuroimaging, CVL ANTs|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,fmriprep,20.2.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/fmriprep, Fmriprep|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,lashis,1.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Segmentation/lashis, Lashis|Image Segmentation|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,julia,1.4.1, Applications/CVL Neuroimaging/VNM Neuroimaging/Programming/julia, Julia|Programming|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,conn 20b,, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/conn, Conn|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,fsleyes,6.0.3, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/fsl, Fsl|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,hdbet,1.0.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Segmentation/hdbet, Hdbet|Image Segmentation|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,register,1.9.17, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/minc, Minc|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,aidmri,1.1, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/aidmri, Aidmri|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,slicersalt,3.0.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/slicersalt, Slicersalt|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,spm12 r7219,, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/spm12, Spm12|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,fsl,6.0.4, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/fsl, Fsl|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,spm12GUI r7219,, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/spm12, Spm12|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,3DSlicerGUI,4.11.20200930, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/slicer, Slicer|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,suma,20.3.00, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/afni, Afni|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,fsleyes,6.0.4, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/fsl, Fsl|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,connGUI 20b,, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/conn, Conn|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,fsleyesGUI,6.0.4, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/fsl, Fsl|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,tgvqsm,1.0.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Quantitative Imaging/tgvqsm, Tgvqsm|Quantitative Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,mrtrix3tissue,5.2.8, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/mrtrix3tissue, Mrtrix3tissue|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,spinalcordtoolbox,5.1.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/spinalcordtoolbox, Spinalcordtoolbox|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,minc,1.9.17, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/minc, Minc|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,bart,0.7.00, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Reconstruction/bart, Bart|Image Reconstruction|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,spinalcordtoolbox,4.3, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/spinalcordtoolbox, Spinalcordtoolbox|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,ashs,2.0.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Segmentation/ashs, Ashs|Image Segmentation|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,qsmxt,1.1.4, Applications/CVL Neuroimaging/VNM Neuroimaging/Quantitative Imaging/qsmxt, Qsmxt|Quantitative Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,mrviewGUI,3.0.1, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/mrtrix3, Mrtrix3|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,mrviewGUI,3.0.2, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/mrtrix3, Mrtrix3|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,gimpGUI,2.10.18, Applications/CVL Neuroimaging/VNM Neuroimaging/All Applications/gimp, Gimp|All Applications|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,itksnap,3.8.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Segmentation/itksnap, Itksnap|Image Segmentation|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,spm12 r7219,, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/spm12, Spm12|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,dsistudioGUI,2020.10, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/dsistudio, Dsistudio|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,fmriprep,20.1.3, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/fmriprep, Fmriprep|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,mrview,3.0.2, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/mrtrix3, Mrtrix3|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,mrtrix3,3.0.1, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/mrtrix3, Mrtrix3|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,aslprep,0.2.7, Applications/CVL Neuroimaging/VNM Neuroimaging/Quantitative Imaging/aslprep, Aslprep|Quantitative Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,freesurfer,7.1.1, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/freesurfer, Freesurfer|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,fsleyesGUI,6.0.3, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/fsl, Fsl|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,mriqc,0.15.2, Applications/CVL Neuroimaging/VNM Neuroimaging/All Applications/mriqc, Mriqc|All Applications|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,itksnapGUI,3.8.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Segmentation/itksnap, Itksnap|Image Segmentation|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,ants,2.3.4, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/ants, Ants|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,connectomeworkbench,1.4.2, Applications/CVL Neuroimaging/VNM Neuroimaging/All Applications/connectomeworkbench, Connectomeworkbench|All Applications|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,registerGUI,1.9.17, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/minc, Minc|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,qsmxt,1.1.6, Applications/CVL Neuroimaging/VNM Neuroimaging/Quantitative Imaging/qsmxt, Qsmxt|Quantitative Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,3DSlicerGUI,3.0.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/slicersalt, Slicersalt|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,dsistudio,2020.10, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/dsistudio, Dsistudio|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,fsl,6.0.3, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/fsl, Fsl|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,qsmxt,1.0.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Quantitative Imaging/qsmxt, Qsmxt|Quantitative Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,convert3d,1.0.0, Applications/CVL Neuroimaging/VNM Neuroimaging/All Applications/convert3d, Convert3d|All Applications|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,bidstools,1.0.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Data Organisation/bidstools, Bidstools|Data Organisation|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,lcmodel,6.3, Applications/CVL Neuroimaging/VNM Neuroimaging/Spectroscopy/lcmodel, Lcmodel|Spectroscopy|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,mrview,3.0.1, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/mrtrix3, Mrtrix3|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,datalad,0.13.3, Applications/CVL Neuroimaging/VNM Neuroimaging/Data Organisation/datalad, Datalad|Data Organisation|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,afni,20.3.00, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/afni, Afni|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,mrtrix3,3.0.2, Applications/CVL Neuroimaging/VNM Neuroimaging/Diffusion Imaging/mrtrix3, Mrtrix3|Diffusion Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,gimp,2.10.18, Applications/CVL Neuroimaging/VNM Neuroimaging/All Applications/gimp, Gimp|All Applications|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,afni,20.3.05, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/afni, Afni|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,freeview,7.1.1, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/freesurfer, Freesurfer|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, module, , 
+CVl@Qld,spinalcordtoolbox,5.2.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/spinalcordtoolbox, Spinalcordtoolbox|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,spinalcordtoolbox,5.3.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/spinalcordtoolbox, Spinalcordtoolbox|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,sumaGUI,20.3.05, Applications/CVL Neuroimaging/VNM Neuroimaging/Functional Imaging/afni, Afni|Functional Imaging|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,freeviewGUI,7.1.1, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/freesurfer, Freesurfer|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,lashis,2.0, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Segmentation/lashis, Lashis|Image Segmentation|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,slicer,4.11.20200930, Applications/CVL Neuroimaging/VNM Neuroimaging/Image Registration/slicer, Slicer|Image Registration|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,root,6.22.02, Applications/CVL Neuroimaging/VNM Neuroimaging/All Applications/root, Root|All Applications|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
+CVl@Qld,fatsegnet 1.0.gpu,, Applications/CVL Neuroimaging/VNM Neuroimaging/All Applications/fatsegnet, Fatsegnet|All Applications|VNM Neuroimaging|Applications|CVL Neuroimaging|Applications, singularity, , 
