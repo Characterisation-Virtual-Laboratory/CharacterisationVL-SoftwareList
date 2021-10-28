@@ -6,9 +6,9 @@ sites. (e.g CVL@MASSIVE, CVL@Wiener, CVL@Awoonga, CVL@UWA), this software has
 been developed to upload a generated CSV file to a common Google Sheet, from
 where the final module list can be consolidated for publication.
 
-.. note::
+..
 
-    To ensure this software module list is updated over time, a Cron job should
+    To ensure this software module list is updated over time, a cron job should
     be setup at each site. This cron job will run a script that builds the list
     of modules into a .csv formatted file. It will then call this software to
     upload the .csv file to the common Google Sheet. Each site will upload the
@@ -66,7 +66,7 @@ activated, then run the same pip command as above from the same folder.
 Configuration
 -------------
 
-The sample config.yml file can be found in the etc folder, below is a copy of it
+The sample config.yml file can be found in the 'etc' folder, below is a copy of it
 with explanation of the settings.
 
 .. code-block:: bash
@@ -103,9 +103,6 @@ Running
       -h, --help       show this help message and exit
       --config CONFIG  path to config.yml
 
-This sample command is set to run at 1 am daily.
-
-
 Cron Job setup
 --------------
 
@@ -115,7 +112,7 @@ to upload to the Google Sheet.
 
 .. code-block:: bash
 
-#!/bin/bash
+  #!/bin/bash
 
   #Output the list of modules
   ./opt/modules-to-google/listModules-massive.sh /opt/modules-to-google/massive_modules.csv
