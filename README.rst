@@ -89,6 +89,13 @@ with explanation of the settings.
 - log-level: Possible values are: logging.DEBUG, logging.INFO, logging.ERROR, logging.WARNING
 - log-files: modules-to-google: Path to the log file. e.g. var/log/modules-to-google.log
 
+The tricky part is setting up the Google Service Account and obtaining the
+`secrets.json' file. This link is a good starting point. https://developers.google.com/identity/protocols/oauth2/service-account
+
+Once the service account is setup, open the Google Sheet, click on 'Share' and
+add the service account with 'editor' access. Use the email address of the
+service account to do this.
+
 Running
 -------
 
