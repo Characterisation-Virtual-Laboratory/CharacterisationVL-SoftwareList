@@ -1,18 +1,23 @@
 Upload software modules list to a Google Sheet
 ==============================================
 
-To provide a consolidated list of software modules available at various CVL sites. (e.g MASSIVE, CVL@Wiener, CVL@Awoonga,
-CVL@UWA), this software has been developed to upload a generated CSV file to a common Google Sheet, from where the
-final module list can be consolidated for publication.
+To provide a consolidated list of software modules available at various CVL
+sites. (e.g CVL@MASSIVE, CVL@Wiener, CVL@Awoonga, CVL@UWA), this software has
+been developed to upload a generated CSV file to a common Google Sheet, from
+where the final module list can be consolidated for publication.
 
 .. note::
-    To ensure this software module list is updated over time, a Cron job should be setup at each site. This cron job
-    will run a script that builds the list of modules into a .csv formatted file. It will then call this software to
-    upload the .csv file to the common Google Sheet. Each site will upload the .csv to its own uniquely named worksheet,
-    from which the software list can be consolidated for all sites.
 
-It is acknowledged that software at each CVL site has been installed differently. This approach allows the script
-that generates the .csv file, to be customised per site.  
+    To ensure this software module list is updated over time, a Cron job should
+    be setup at each site. This cron job will run a script that builds the list
+    of modules into a .csv formatted file. It will then call this software to
+    upload the .csv file to the common Google Sheet. Each site will upload the
+    .csv to its own uniquely named worksheet, from which the software list can
+    be consolidated for all sites.
+
+It is acknowledged that software at each CVL site has been installed
+differently. This approach allows the script that generates the .csv file, to be
+customised per site.
 
 Installation
 ------------
@@ -110,16 +115,23 @@ to upload to the Google Sheet.
 
 .. code-block:: bash
 
+#!/bin/bash
+
+  #Output the list of modules
+  ./opt/modules-to-google/listModules-massive.sh /opt/modules-to-google/massive_modules.csv
+
+  source /opt/modules-to-google/bin/activate
+  modules-to-google --config /opt/modules-to-google/etc/config.yml
+
+
+The folder 'site-scripts' contains details on how to generate the modules list '.csv'
+file at each site. Customise the above script to suite your site.
+
+
+An example crontab setup ensuring the job runs daily at 1:00 am. Customise to
+your requirements.
+
+.. code-block:: bash
+
     #Ansible: modules-to-google crontab
     0 1 * * * /opt/modules-to-google/build-modules-list.sh
-
-
-
-
-
-
-
-
-
-
-
