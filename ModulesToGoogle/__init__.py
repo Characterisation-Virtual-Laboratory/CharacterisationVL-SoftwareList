@@ -57,13 +57,13 @@ class ModulesToGoogle:
 
         # Create the body for updating the worksheet
         # https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets/request
-        body = {"includeSpreadsheetInResponse": True,
-                "requests": {"deleteRange": {"range": {"sheetId": sheet_id, "rowIndex": 0, "columnIndex": 0}}},
-                "requests": {"pasteData": {"coordinate": {"columnIndex": 0, "rowIndex": 0, "sheetId": sheet_id},
-                                           "data": modules_from_file,
-                                           "type": "PASTE_VALUES",
-                                           "delimiter": ","
-                                           }}}
+        body = {
+                "requests": [{"updateCells": {"range": {"sheetId": sheet_id}, "fields": "*"}},
+                             {"pasteData": {"coordinate": {"columnIndex": 0, "rowIndex": 0, "sheetId": sheet_id},
+                                            "data": modules_from_file,
+                                            "type": "PASTE_VALUES",
+                                            "delimiter": ","}}],
+                "includeSpreadsheetInResponse": True}
         body_json = json.dumps(body, indent=4)
         self.logger.debug("Type: {}".format(type(body_json)))
         self.logger.debug("Body: {}".format(body_json))
