@@ -4,7 +4,7 @@ Tools to consolidate a listing of CVL software available at the various sites.
 
 
 # list.py (Python >=3.6)
-This small script parses Mate's menu configuration files to get a list of installed software. 
+This small script parses Mate's menu configuration files to get a list of installed software.
 It also looks into the Exec script to determine how the sofware is launched (singulraity or module).
 
 To run:
@@ -37,6 +37,11 @@ python3 list.py --xdg-applications-dirs "/sw7/CVL/xdg_data_dirs/applications" \
 ```
 
 ## At massive
+The best way to obtain a list of all software modules is to run the bash script
+`listModules-massive.sh`. This will build a full list. The example below will
+build a list of software modules available in the Desktop menu, which is a small
+subset of all software.
+
 ```
 python3 list.py --cvl-site "CVl@Massive"  --output-file "CVl@Massive-21Sep2021.csv" \
 				--xdg-applications-dirs "/usr/local/share/applications" "/usr/local/desktop/services/massive-p4/xdg_config/applications-merged/application" \

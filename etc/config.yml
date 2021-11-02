@@ -1,0 +1,9 @@
+---
+service-account-secrets-file: "secrets.json"
+modules_file: "massive_modules.csv"
+spreadsheet_id: "11f27MLbWKb94sUFbOEuaWw8AD25o-EasYBK9XBulBpg"
+worksheet: "Monash"
+
+log-level: logging.DEBUG
+log-files:
+    modules-to-google: /opt/modules-to-google/var/log/modules-to-google.log
