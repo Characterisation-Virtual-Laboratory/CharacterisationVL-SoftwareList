@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#load the modules command
+. /etc/profile.d/modulecmd.sh
+
 # Example on how to execute.
 # listModules-massive.sh massive_modules.csv
 OUTPUT=$1
@@ -13,4 +16,3 @@ echo "software,version,date_last_modified" > $OUTPUT
 
 #Split the software and version number by the "/" delimiter, then print it (software,version,date_modified)
 awk -F/ '{st = index($0,"/");print $1 "  " substr($0,st+1)}' < /tmp/modulesb.txt | awk '{print $1"," $2","$3}' >> $OUTPUT
-
