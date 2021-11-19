@@ -1,4 +1,3 @@
 ---
 dependencies:
-- role: m3_python_36
-
+- role: role_python_36

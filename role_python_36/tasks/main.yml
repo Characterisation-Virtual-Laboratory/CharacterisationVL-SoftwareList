@@ -1,0 +1,23 @@
+---
+- name: install python3
+  yum:
+    name: 
+      - python3
+      - python3-setuptools
+      - python-virtualenv
+      - python3-pip
+    state: present
+  become: true
+  become_user: root
+
+- name: install python packages
+  pip:
+    name:
+      - virtualenv
+      - setuptools
+    state: present
+    executable: pip3
+  become: true
+  become_user: root
+
+
