@@ -37,6 +37,10 @@ The following steps are an example:
     - Install the software
         pip install git+https://github.com/Characterisation-Virtual-Laboratory/CharacterisationVL-SoftwareList.git#egg=ModulesToGoogle
 
+Installation could also be performed using Ansible.
+A sample role 'role_cvl_modules_list' and its dependant role 'role_python_36'
+have been included.
+
 
 Installation for Development
 ----------------------------
