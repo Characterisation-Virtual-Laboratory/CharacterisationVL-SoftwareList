@@ -1,0 +1,3 @@
+---
+dependencies:
+- role: role_python_36

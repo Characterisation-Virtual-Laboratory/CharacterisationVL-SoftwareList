@@ -1,0 +1,4 @@
+---
+cvl_modules_install_dir: /opt/cvl-module-list-upload
+spreadsheet_id: the_Google_ID_for_your_spreadsheet
+worksheet_name: the_name_of_your_spreadsheet
