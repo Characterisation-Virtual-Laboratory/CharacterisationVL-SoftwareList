@@ -1,0 +1,9 @@
+---
+service-account-secrets-file: "{{ cvl_modules_install_dir }}/etc/secrets.json"
+modules_file: "{{ cvl_modules_install_dir }}/etc/massive_modules.csv"
+spreadsheet_id: "{{ spreadsheet_id }}"
+worksheet: "{{ worksheet_name }}"
+
+log-level: logging.INFO
+log-files:
+    modules-to-google: {{ cvl_modules_install_dir }}/var/log/modules-to-google.log

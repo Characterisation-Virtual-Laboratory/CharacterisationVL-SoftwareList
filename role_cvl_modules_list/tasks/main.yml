@@ -1,0 +1,68 @@
+---
+- name: create the install directory
+  file: dest={{ cvl_modules_install_dir }} state=directory owner=root
+  become: yes
+  become_user: root
+
+- name: create the install directory - etc
+  file: dest={{ cvl_modules_install_dir }}/etc state=directory owner=root
+  become: yes
+  become_user: root
+
+- name: create the install directory - var/log
+  file: dest={{ cvl_modules_install_dir }}/var/log state=directory owner=root
+  become: yes
+  become_user: root
+
+- name: install the config file
+  template: src=config.yml.j2 dest={{ cvl_modules_install_dir }}/etc/config.yml owner=root mode=600
+  become: yes
+  become_user: root
+
+- name: install the 'secrets.json' file
+  copy: dest={{ cvl_modules_install_dir }}/etc/secrets.json
+        src=secrets.json
+        owner=root
+        mode=500
+        decrypt=yes
+  become: yes
+  become_user: root
+
+- name: install ModulesToGoogle
+  pip:
+    chdir: "{{ cvl_modules_install_dir }}"
+    name:
+      - git+https://github.com/Characterisation-Virtual-Laboratory/CharacterisationVL-SoftwareList.git#egg=ModulesToGoogle
+    state: present
+    virtualenv: "{{ cvl_modules_install_dir }}"
+    virtualenv_python: python3.6
+  become: yes
+  become_user: root
+
+- name: change ownership
+  file:
+    path: "{{ cvl_modules_install_dir }}"
+    owner: root
+    recurse: yes
+  become: yes
+  become_user: root
+
+- name: install listModules-massive.sh script
+  copy: dest={{ cvl_modules_install_dir }}/etc/listModules-massive.sh src=listModules-massive.sh owner=root mode=700
+  become: yes
+  become_user: root
+
+- name: install the 'build-modules-list.sh' script
+  template: src=build-modules-list.sh.j2 dest={{ cvl_modules_install_dir }}/build-modules-list.sh owner=root mode=700
+  become: yes
+  become_user: root
+
+- name: alert cron job
+  cron:
+    job: "{{ cvl_modules_install_dir }}/build-modules-list.sh --config {{ cvl_modules_install_dir }}/etc/config.yml"
+    name: cvl_modules_list crontab
+    user: root
+    minute: "0"
+    hour: "1"
+  become: true
+  become_user: root

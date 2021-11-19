@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Output the list of modules
+{{ cvl_modules_install_dir }}/etc/listModules-massive.sh {{ cvl_modules_install_dir }}/etc/massive_modules.csv
+
+source {{ cvl_modules_install_dir }}/bin/activate
+modules-to-google --config {{ cvl_modules_install_dir }}/etc/config.yml

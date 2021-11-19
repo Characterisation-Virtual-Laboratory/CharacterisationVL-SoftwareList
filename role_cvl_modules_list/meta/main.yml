@@ -1,0 +1,4 @@
+---
+dependencies:
+- role: m3_python_36
+
