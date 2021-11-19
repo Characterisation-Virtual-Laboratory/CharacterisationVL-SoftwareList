@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#load the modules command
+. /etc/profile.d/modulecmd.sh
+
 # Example on how to execute.
 # listModules-massive.sh massive_modules.csv
 OUTPUT=$1
